@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- ICON -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Arrays e Coleções - Lista de compras </title>
+
+
+</head>
+
+<body>
+
+    <h1> LISTA DE COMPRAS </h1>
+
+    <div class="container">
+
+        <input type="text" id="nomeProd" placeholder="Informe o nome do produto">
+
+        <select id="categoria">
+
+            <option value="escolher" disabled selected>Selecione a categoria:</option>
+            <option value="cereais">Cereais</option>
+            <option value="leguminosas">Leguminosas</option>
+            <option value="frutasLegumes">Frutas e Legumes</option>
+            <option value="laticinios">Laticínios</option>
+            <option value="carnes">Carnes</option>          
+            <option value="bebidas">Bebidas</option>
+            <option value="higieneLimpeza">Higiene e Limpeza</option>
+            <option value="outros">Outros</option>
+
+        </select>
+
+        <button class="add" onclick="add()">ADICIONAR</button>
+        <button class="remove" onclick="remove()">EXCLUIR</button>
+
+
+
+    </div>
+
+
+    <div class="categoria-cereais">
+        <h3>Cereais</h3>
+        <ul id="cereais"></ul>
+        <hr>
+    </div>
+
+    <div class="categoria-leguminosas">
+        <h3>Leguminosas</h3>
+        <ul id="leguminosas"></ul>
+        <hr>
+    </div>
+    <div class="categoria-frutasLegumes">
+        <h3>Frutas e Legumes</h3>
+        <ul id="frutasLegumes"></ul>
+        <hr>
+    </div>
+
+    <div class="categoria-laticinios">
+        <h3>Laticínios</h3>
+        <ul id="laticinios"></ul>
+        <hr>
+    </div>
+
+    <div class="categoria-carnes">
+        <h3>Carnes</h3>
+        <ul id="carnes"></ul>
+    </div>
+
+    <div class="categoria-bebidas">
+        <h3>Bebidas</h3>
+        <ul id="bebidas"></ul>
+    </div>
+
+    <div class="categoria-higieneLimpeza">
+        <h3>Higiene pessoal e Limpeza</h3>
+        <ul id="higieneLimpeza"></ul>
+    </div>
+
+    <div class="categoria-outros">
+        <h3>Outros</h3>
+        <ul id="outros"></ul>
+    </div>
+
+
+
+    <footer>
+        <!-- CONTATO -->
+
+        <section class="contato">
+
+            <div class="repositorio">
+
+                <a href="https://github.com/giovanesouza/listaDeCompras" target="_blank">
+
+                    <i class="ri-github-fill"></i>
+
+                </a>
+
+            </div>
+
+
+            <div class="linkedin">
+
+                <a href="https://www.linkedin.com/in/developergiovanesouza/" target="_blank">
+
+                    <i class="ri-linkedin-fill"></i>
+
+                </a>
+
+            </div>
+
+
+        </section>
+
+
+        <p> &copy 2022 - Developer Giovane Souza. </p>
+
+
+    </footer>
+
+
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
