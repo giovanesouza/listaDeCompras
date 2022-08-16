@@ -21,74 +21,77 @@ function add() {
     nomeProd = document.querySelector("#nomeProd").value;
     categoria = document.querySelector("#categoria").value;
 
+    if (nomeProd == "" || nomeProd == null && categoria == "escolher") {
+        alert("Digite o nome do produto e selecione a categoria para adicioná-lo à lista.")
+    } else {
 
-    switch (categoria) {
+        switch (categoria) {
 
-        case "cereais":
+            case "cereais":
 
-            cereais.push(nomeProd);
+                cereais.push(nomeProd);
 
-            renderCereais();
+                renderCereais();
 
-            break;
+                break;
 
-        case "leguminosas":
+            case "leguminosas":
 
-            leguminosas.push(nomeProd);
-            renderLeguminosas();
+                leguminosas.push(nomeProd);
+                renderLeguminosas();
 
-            break;
+                break;
 
-        case "frutasLegumes":
+            case "frutasLegumes":
 
-            frutasLegumes.push(nomeProd);
-            renderFrutasLegumes();
+                frutasLegumes.push(nomeProd);
+                renderFrutasLegumes();
 
-            break;
+                break;
 
-        case "laticinios":
+            case "laticinios":
 
-            laticinios.push(nomeProd);
-            renderLaticinios();
+                laticinios.push(nomeProd);
+                renderLaticinios();
 
-            break;
+                break;
 
-        case "carnes":
+            case "carnes":
 
-            carnes.push(nomeProd);
-            renderCarnes();
+                carnes.push(nomeProd);
+                renderCarnes();
 
-            break;
+                break;
 
-        case "bebidas":
+            case "bebidas":
 
-            bebidas.push(nomeProd);
-            renderBebidas();
+                bebidas.push(nomeProd);
+                renderBebidas();
 
-            break;
+                break;
 
-        case "higieneLimpeza":
+            case "higieneLimpeza":
 
-            higieneLimpeza.push(nomeProd);
-            renderHigieneLimpeza();
+                higieneLimpeza.push(nomeProd);
+                renderHigieneLimpeza();
 
-            break;
+                break;
 
-        case "outros":
+            case "outros":
 
-            outros.push(nomeProd);
-            renderOutros();
+                outros.push(nomeProd);
+                renderOutros();
 
-            break;
+                break;
 
-        default:
+            default:
 
-            alert(`Categoria inválida! O produto ${nomeProd} não foi adicionado à lista.`);
+                alert(`Categoria inválida! O produto ${nomeProd} não foi adicionado à lista.`);
 
-            break;
+                break;
 
+        }
     }
-
 
     mostrarLista();
 
@@ -402,12 +405,12 @@ function remove() {
             mostrarLista();
             renderHigieneLimpeza();
 
-        }   else if (categoria == "outros" && outros.indexOf(nomeProd) != -1) {
+        } else if (categoria == "outros" && outros.indexOf(nomeProd) != -1) {
 
-                outros.splice(outros.indexOf(nomeProd), 1);
-    
-                mostrarLista();
-                renderOutros();
+            outros.splice(outros.indexOf(nomeProd), 1);
+
+            mostrarLista();
+            renderOutros();
 
 
         } else {
